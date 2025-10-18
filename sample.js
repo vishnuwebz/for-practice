@@ -338,3 +338,23 @@ number.sort();
 document.write("<br> <br>" + number);
 
 document.write("<br> <br>" + number[1] + number[4]);
+
+
+// Strings
+
+var text = "JavaScript";
+
+document.write(text[0] + "<br>");
+
+document.write(text.charAt(2) + "<br>"); // we can find which character on the specific index number
+
+var text1 = "Learn ";
+document.write(text1.concat(text) + "<br>"); // concat() method will concatenate both strings together.
+
+var text = "HELLO";
+document.write(text.toLowerCase() + "<br>"); // toLowerCase() method will lowercase the capital letters
+
+document.write(text.toUpperCase() + "<br>"); // toUpperCase() method will convert lowercased letters to uppercase
+
+text = "Learn Java Script";
+document.write(text.slice(6, 10)); // slice method will slice it and give the output by using starting and end index number we need to slice
