@@ -296,3 +296,45 @@ for(var i=0; i<x; i++){
         animal[i] + "<br>"
     );
 }
+
+
+// Arrays
+
+var animal = ["Lion", "Tiger", "Cat", "Dog", "Fox"];
+
+document.write(animal  + "<br>");
+
+animal[0] = "Elephant";
+document.write(animal[0]);
+
+var x = animal.length;
+document.write(x);
+
+
+for(var i=0; i<x; i++){
+    document.write(
+        animal[i] + "<br>"
+    );
+}
+
+animal.push("Rabbit", "Zebra", "Parrot"); // used to add the elements without animals[4] = "Zebra" ,in python it is append
+document.write(animal)
+
+animal.shift(); // will deletee the first element
+document.write(animal);
+
+
+animal.pop(); // will delete the last element
+document.write(animal);
+
+animal.splice(0,2);  // by using the splice method we can delete our wished item
+document.write(animal);
+
+animal.sort(); // will sort in alphabetical order
+document.write(animal);
+
+var number = [20, 50, 40, 90, 10];
+number.sort();
+document.write("<br> <br>" + number);
+
+document.write("<br> <br>" + number[1] + number[4]);
