@@ -358,3 +358,31 @@ document.write(text.toUpperCase() + "<br>"); // toUpperCase() method will conver
 
 text = "Learn Java Script";
 document.write(text.slice(6, 10)); // slice method will slice it and give the output by using starting and end index number we need to slice
+
+
+// Math Object
+
+var a = 9;
+
+document.write(Math.sqrt(a) + "<br>"); // to find the square root of a number
+a = -12;
+document.write(Math.abs(a) + "<br>"); // to get the absolute value of the number
+
+document.write(Math.min(10, 1, 7, 50) + "<br>"); // to get the minimum value in a set of numbers
+
+document.write(Math.max(10, 1, 7, 50) + "<br>"); // to get the maximum value in a set of numbers
+
+document.write(Math.pow(2,3) + "<br>"); // to get the power of a number
+
+a = 9.5;
+document.write(Math.floor(a) + "<br>"); // will round it and give the number
+
+document.write(Math.ceil(a) + "<br>"); // will round into upper number
+
+document.write(Math.round(a) + "<br>"); // will round it
+
+document.write(Math.random() + "<br>"); // will generate a random number
+
+var b = Math.random();
+var rounded = Math.floor(a*10);
+document.write(rounded  + "<br>");
