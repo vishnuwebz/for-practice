@@ -360,29 +360,62 @@ text = "Learn Java Script";
 document.write(text.slice(6, 10)); // slice method will slice it and give the output by using starting and end index number we need to slice
 
 
-// Math Object
+// DOM - DOCUMENT OBJECT MODEL
 
-var a = 9;
+/*
+API - Application Programming Interface for HTML and XML Documents.
 
-document.write(Math.sqrt(a) + "<br>"); // to find the square root of a number
-a = -12;
-document.write(Math.abs(a) + "<br>"); // to get the absolute value of the number
+HTML DOM is the object oriented representation of the web page.
 
-document.write(Math.min(10, 1, 7, 50) + "<br>"); // to get the minimum value in a set of numbers
+When web page is loaded, browser creates the HTML DOM of the page.
 
-document.write(Math.max(10, 1, 7, 50) + "<br>"); // to get the maximum value in a set of numbers
+Represent all HTML Elements as Objects.
 
-document.write(Math.pow(2,3) + "<br>"); // to get the power of a number
+JavaScript uses DOM to access the HTML Elements
 
-a = 9.5;
-document.write(Math.floor(a) + "<br>"); // will round it and give the number
+Using DOM JavaScript can:
 
-document.write(Math.ceil(a) + "<br>"); // will round into upper number
+Change/Remove/Create HTML Elements & Attributes.
+Change the CSS Properties
+React/Create HTML Events.
 
-document.write(Math.round(a) + "<br>"); // will round it
 
-document.write(Math.random() + "<br>"); // will generate a random number
+Accessing Document Object:
 
-var b = Math.random();
-var rounded = Math.floor(a*10);
-document.write(rounded  + "<br>");
+1: getElementById()
+2: getElementsByName()
+3: getElementsByTagName()
+4: getElementsByClassName()
+5: CSS Selectors()
+
+*/
+
+// Get Element By Id
+
+//var a = document.getElementById("head1");
+//a.innerHTML = "Learn JavaScript";
+//a.style.color = "blue";
+
+// Get Element by Class Name
+
+var a = document.getElementsByClassName("head1");
+a[0].innerHTML = "Good Morning";
+a[2].style.color = "red";
+
+// Get Element By Tag Name
+var c = document.getElementsByTagName("p");
+console.log(c);
+c[0].innerHTML = "Changed Paragraph";
+
+
+// Get Element By Name
+
+var x = document.getElementsByName("text")[0];
+
+
+var y = document.getElementById("head");
+
+function message(){
+    y.innerHTML = "Hello " + x.value;
+}
+
